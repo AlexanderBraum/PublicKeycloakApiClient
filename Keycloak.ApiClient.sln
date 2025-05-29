@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36127.28
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Keycloak.ApiClient", "Keycloak.ApiClient\Keycloak.ApiClient.csproj", "{D709F4A3-D037-5F5D-CDEA-A3F0C367418B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Keycloak.ApiClient.Generated", "Keycloak.ApiClient.Generated\Keycloak.ApiClient.Generated.csproj", "{B46BC07A-9C74-3BA1-B37A-524BCB66F20D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "source", "source", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		source\keycloak_openapi.json = source\keycloak_openapi.json
+		source\nswag.nswag = source\nswag.nswag
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D709F4A3-D037-5F5D-CDEA-A3F0C367418B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D709F4A3-D037-5F5D-CDEA-A3F0C367418B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D709F4A3-D037-5F5D-CDEA-A3F0C367418B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D709F4A3-D037-5F5D-CDEA-A3F0C367418B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B46BC07A-9C74-3BA1-B37A-524BCB66F20D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B46BC07A-9C74-3BA1-B37A-524BCB66F20D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B46BC07A-9C74-3BA1-B37A-524BCB66F20D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B46BC07A-9C74-3BA1-B37A-524BCB66F20D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C203ED90-BBAA-4061-AE24-27B23AD8E1E7}
+	EndGlobalSection
+EndGlobal
