@@ -8,23 +8,23 @@ namespace Keycloak.ApiClient
 {
     public static class KeycloakApiClientFactory
     {
-        public static async Task<KeycloakApiClient> GetKeycloakApiClient(string baseUrl, string username, string password)
+        public static async Task<KeycloakApiClient> GetKeycloakApiClientAsync(string baseUrl, string username, string password)
         {
-            var httpClient = await GetHttpClient(baseUrl, username, password);
+            var httpClient = await GetHttpClientAsync(baseUrl, username, password);
             var result = new KeycloakApiClient(baseUrl, httpClient);
             return result;
         }
 
-        private static async Task<HttpClient> GetHttpClient(string baseUrl, string username, string password)
+        private static async Task<HttpClient> GetHttpClientAsync(string baseUrl, string username, string password)
         {
             var handler = new HttpClientHandler();
             var httpClient = new HttpClient(handler);
-            var bearerToken = await GetAdminToken(baseUrl, username, password);
+            var bearerToken = await GetAdminTokenAsync(baseUrl, username, password);
             httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", bearerToken);
             return httpClient;
         }
 
-        private static async Task<string> GetAdminToken(string baseUrl, string username, string password)
+        private static async Task<string> GetAdminTokenAsync(string baseUrl, string username, string password)
         {
             var client = new HttpClient();
             var tokenRequest = new HttpRequestMessage(HttpMethod.Post, $"{baseUrl}/realms/master/protocol/openid-connect/token")
