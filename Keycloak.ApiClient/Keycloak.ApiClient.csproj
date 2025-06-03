@@ -5,4 +5,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Keycloak.ApiClient.Generated\Keycloak.ApiClient.Generated.csproj" />
+  </ItemGroup>
+
 </Project>
