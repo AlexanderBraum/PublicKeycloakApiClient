@@ -34911,162 +34911,162 @@ namespace keycloak
 
     }
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.4.0.0 (NJsonSchema v11.3.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    [System.Obsolete]
-    public partial class ApplicationRepresentation
-    {
-        [Newtonsoft.Json.JsonProperty("id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Id { get; set; }
+    //[System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.4.0.0 (NJsonSchema v11.3.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    //[System.Obsolete]
+    //public partial class ApplicationRepresentation
+    //{
+    //    [Newtonsoft.Json.JsonProperty("id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public string Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("clientId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string ClientId { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("clientId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public string ClientId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("description", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Description { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("description", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public string Description { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("type", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Type { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("type", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public string Type { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("rootUrl", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string RootUrl { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("rootUrl", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public string RootUrl { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("adminUrl", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string AdminUrl { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("adminUrl", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public string AdminUrl { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("baseUrl", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string BaseUrl { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("baseUrl", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public string BaseUrl { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("surrogateAuthRequired", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool SurrogateAuthRequired { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("surrogateAuthRequired", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public bool SurrogateAuthRequired { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("enabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool Enabled { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("enabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public bool Enabled { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("alwaysDisplayInConsole", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool AlwaysDisplayInConsole { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("alwaysDisplayInConsole", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public bool AlwaysDisplayInConsole { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("clientAuthenticatorType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string ClientAuthenticatorType { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("clientAuthenticatorType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public string ClientAuthenticatorType { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("secret", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Secret { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("secret", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public string Secret { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("registrationAccessToken", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string RegistrationAccessToken { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("registrationAccessToken", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public string RegistrationAccessToken { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("defaultRoles", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public System.Collections.Generic.ICollection<string> DefaultRoles { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("defaultRoles", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    [System.Obsolete]
+    //    public System.Collections.Generic.ICollection<string> DefaultRoles { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("redirectUris", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> RedirectUris { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("redirectUris", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public System.Collections.Generic.ICollection<string> RedirectUris { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("webOrigins", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> WebOrigins { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("webOrigins", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public System.Collections.Generic.ICollection<string> WebOrigins { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("notBefore", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int NotBefore { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("notBefore", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public int NotBefore { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("bearerOnly", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool BearerOnly { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("bearerOnly", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public bool BearerOnly { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("consentRequired", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool ConsentRequired { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("consentRequired", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public bool ConsentRequired { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("standardFlowEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool StandardFlowEnabled { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("standardFlowEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public bool StandardFlowEnabled { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("implicitFlowEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool ImplicitFlowEnabled { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("implicitFlowEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public bool ImplicitFlowEnabled { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("directAccessGrantsEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool DirectAccessGrantsEnabled { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("directAccessGrantsEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public bool DirectAccessGrantsEnabled { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("serviceAccountsEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool ServiceAccountsEnabled { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("serviceAccountsEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public bool ServiceAccountsEnabled { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("authorizationServicesEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool AuthorizationServicesEnabled { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("authorizationServicesEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public bool AuthorizationServicesEnabled { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("directGrantsOnly", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public bool DirectGrantsOnly { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("directGrantsOnly", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    [System.Obsolete]
+    //    public bool DirectGrantsOnly { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("publicClient", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool PublicClient { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("publicClient", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public bool PublicClient { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("frontchannelLogout", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool FrontchannelLogout { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("frontchannelLogout", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public bool FrontchannelLogout { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("protocol", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Protocol { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("protocol", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public string Protocol { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("attributes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, string> Attributes { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("attributes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public System.Collections.Generic.IDictionary<string, string> Attributes { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("authenticationFlowBindingOverrides", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, string> AuthenticationFlowBindingOverrides { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("authenticationFlowBindingOverrides", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public System.Collections.Generic.IDictionary<string, string> AuthenticationFlowBindingOverrides { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("fullScopeAllowed", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool FullScopeAllowed { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("fullScopeAllowed", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public bool FullScopeAllowed { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("nodeReRegistrationTimeout", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int NodeReRegistrationTimeout { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("nodeReRegistrationTimeout", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public int NodeReRegistrationTimeout { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("registeredNodes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, int> RegisteredNodes { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("registeredNodes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public System.Collections.Generic.IDictionary<string, int> RegisteredNodes { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("protocolMappers", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<ProtocolMapperRepresentation> ProtocolMappers { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("protocolMappers", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public System.Collections.Generic.ICollection<ProtocolMapperRepresentation> ProtocolMappers { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("clientTemplate", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public string ClientTemplate { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("clientTemplate", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    [System.Obsolete]
+    //    public string ClientTemplate { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("useTemplateConfig", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public bool UseTemplateConfig { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("useTemplateConfig", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    [System.Obsolete]
+    //    public bool UseTemplateConfig { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("useTemplateScope", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public bool UseTemplateScope { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("useTemplateScope", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    [System.Obsolete]
+    //    public bool UseTemplateScope { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("useTemplateMappers", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public bool UseTemplateMappers { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("useTemplateMappers", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    [System.Obsolete]
+    //    public bool UseTemplateMappers { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("defaultClientScopes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> DefaultClientScopes { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("defaultClientScopes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public System.Collections.Generic.ICollection<string> DefaultClientScopes { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("optionalClientScopes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> OptionalClientScopes { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("optionalClientScopes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public System.Collections.Generic.ICollection<string> OptionalClientScopes { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("authorizationSettings", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public ResourceServerRepresentation AuthorizationSettings { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("authorizationSettings", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public ResourceServerRepresentation AuthorizationSettings { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("access", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, bool> Access { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("access", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public System.Collections.Generic.IDictionary<string, bool> Access { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("origin", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Origin { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("origin", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public string Origin { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Name { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("claims", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public Claims Claims { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("claims", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    [System.Obsolete]
+    //    public Claims Claims { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+    //    private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
-        {
-            get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
-            set { _additionalProperties = value; }
-        }
+    //    [Newtonsoft.Json.JsonExtensionData]
+    //    public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+    //    {
+    //        get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
+    //        set { _additionalProperties = value; }
+    //    }
 
-    }
+    //}
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.4.0.0 (NJsonSchema v11.3.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class AuthDetailsRepresentation
@@ -35112,9 +35112,9 @@ namespace keycloak
         [Newtonsoft.Json.JsonProperty("priority", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Priority { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("autheticatorFlow", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public bool AutheticatorFlow { get; set; }
+        //[Newtonsoft.Json.JsonProperty("autheticatorFlow", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //[System.Obsolete]
+        //public bool AutheticatorFlow { get; set; }
 
         [Newtonsoft.Json.JsonProperty("flowAlias", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string FlowAlias { get; set; }
@@ -35207,9 +35207,9 @@ namespace keycloak
         [Newtonsoft.Json.JsonProperty("priority", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Priority { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("autheticatorFlow", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public bool AutheticatorFlow { get; set; }
+        //[Newtonsoft.Json.JsonProperty("autheticatorFlow", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //[System.Obsolete]
+        //public bool AutheticatorFlow { get; set; }
 
         [Newtonsoft.Json.JsonProperty("id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Id { get; set; }
@@ -35683,9 +35683,9 @@ namespace keycloak
         [Newtonsoft.Json.JsonProperty("registrationAccessToken", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string RegistrationAccessToken { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("defaultRoles", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public System.Collections.Generic.ICollection<string> DefaultRoles { get; set; }
+        //[Newtonsoft.Json.JsonProperty("defaultRoles", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //[System.Obsolete]
+        //public System.Collections.Generic.ICollection<string> DefaultRoles { get; set; }
 
         [Newtonsoft.Json.JsonProperty("redirectUris", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<string> RedirectUris { get; set; }
@@ -35717,9 +35717,9 @@ namespace keycloak
         [Newtonsoft.Json.JsonProperty("authorizationServicesEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool AuthorizationServicesEnabled { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("directGrantsOnly", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public bool DirectGrantsOnly { get; set; }
+        //[Newtonsoft.Json.JsonProperty("directGrantsOnly", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //[System.Obsolete]
+        //public bool DirectGrantsOnly { get; set; }
 
         [Newtonsoft.Json.JsonProperty("publicClient", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool PublicClient { get; set; }
@@ -35748,21 +35748,21 @@ namespace keycloak
         [Newtonsoft.Json.JsonProperty("protocolMappers", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<ProtocolMapperRepresentation> ProtocolMappers { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("clientTemplate", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public string ClientTemplate { get; set; }
+        //[Newtonsoft.Json.JsonProperty("clientTemplate", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //[System.Obsolete]
+        //public string ClientTemplate { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("useTemplateConfig", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public bool UseTemplateConfig { get; set; }
+        //[Newtonsoft.Json.JsonProperty("useTemplateConfig", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //[System.Obsolete]
+        //public bool UseTemplateConfig { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("useTemplateScope", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public bool UseTemplateScope { get; set; }
+        //[Newtonsoft.Json.JsonProperty("useTemplateScope", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //[System.Obsolete]
+        //public bool UseTemplateScope { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("useTemplateMappers", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public bool UseTemplateMappers { get; set; }
+        //[Newtonsoft.Json.JsonProperty("useTemplateMappers", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //[System.Obsolete]
+        //public bool UseTemplateMappers { get; set; }
 
         [Newtonsoft.Json.JsonProperty("defaultClientScopes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<string> DefaultClientScopes { get; set; }
@@ -35822,65 +35822,65 @@ namespace keycloak
 
     }
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.4.0.0 (NJsonSchema v11.3.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    [System.Obsolete]
-    public partial class ClientTemplateRepresentation
-    {
-        [Newtonsoft.Json.JsonProperty("id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Id { get; set; }
+    //[System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.4.0.0 (NJsonSchema v11.3.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    //[System.Obsolete]
+    //public partial class ClientTemplateRepresentation
+    //{
+    //    [Newtonsoft.Json.JsonProperty("id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public string Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Name { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("description", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Description { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("description", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public string Description { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("protocol", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Protocol { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("protocol", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public string Protocol { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("fullScopeAllowed", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool FullScopeAllowed { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("fullScopeAllowed", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public bool FullScopeAllowed { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("bearerOnly", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool BearerOnly { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("bearerOnly", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public bool BearerOnly { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("consentRequired", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool ConsentRequired { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("consentRequired", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public bool ConsentRequired { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("standardFlowEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool StandardFlowEnabled { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("standardFlowEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public bool StandardFlowEnabled { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("implicitFlowEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool ImplicitFlowEnabled { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("implicitFlowEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public bool ImplicitFlowEnabled { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("directAccessGrantsEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool DirectAccessGrantsEnabled { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("directAccessGrantsEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public bool DirectAccessGrantsEnabled { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("serviceAccountsEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool ServiceAccountsEnabled { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("serviceAccountsEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public bool ServiceAccountsEnabled { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("publicClient", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool PublicClient { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("publicClient", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public bool PublicClient { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("frontchannelLogout", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool FrontchannelLogout { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("frontchannelLogout", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public bool FrontchannelLogout { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("attributes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, string> Attributes { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("attributes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public System.Collections.Generic.IDictionary<string, string> Attributes { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("protocolMappers", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<ProtocolMapperRepresentation> ProtocolMappers { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("protocolMappers", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public System.Collections.Generic.ICollection<ProtocolMapperRepresentation> ProtocolMappers { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+    //    private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
-        {
-            get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
-            set { _additionalProperties = value; }
-        }
+    //    [Newtonsoft.Json.JsonExtensionData]
+    //    public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+    //    {
+    //        get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
+    //        set { _additionalProperties = value; }
+    //    }
 
-    }
+    //}
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.4.0.0 (NJsonSchema v11.3.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class ClientTypeRepresentation
@@ -36030,9 +36030,9 @@ namespace keycloak
         [Newtonsoft.Json.JsonProperty("client", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.IDictionary<string, System.Collections.Generic.ICollection<string>> Client { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("application", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public System.Collections.Generic.IDictionary<string, System.Collections.Generic.ICollection<string>> Application { get; set; }
+        //[Newtonsoft.Json.JsonProperty("application", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //[System.Obsolete]
+        //public System.Collections.Generic.IDictionary<string, System.Collections.Generic.ICollection<string>> Application { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 
@@ -36136,41 +36136,41 @@ namespace keycloak
         [Newtonsoft.Json.JsonProperty("temporary", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool Temporary { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("device", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public string Device { get; set; }
+        //[Newtonsoft.Json.JsonProperty("device", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //[System.Obsolete]
+        //public string Device { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("hashedSaltedValue", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public string HashedSaltedValue { get; set; }
+        //[Newtonsoft.Json.JsonProperty("hashedSaltedValue", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //[System.Obsolete]
+        //public string HashedSaltedValue { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("salt", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public string Salt { get; set; }
+        //[Newtonsoft.Json.JsonProperty("salt", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //[System.Obsolete]
+        //public string Salt { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("hashIterations", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public int HashIterations { get; set; }
+        //[Newtonsoft.Json.JsonProperty("hashIterations", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //[System.Obsolete]
+        //public int HashIterations { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("counter", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public int Counter { get; set; }
+        //[Newtonsoft.Json.JsonProperty("counter", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //[System.Obsolete]
+        //public int Counter { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("algorithm", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public string Algorithm { get; set; }
+        //[Newtonsoft.Json.JsonProperty("algorithm", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //[System.Obsolete]
+        //public string Algorithm { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("digits", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public int Digits { get; set; }
+        //[Newtonsoft.Json.JsonProperty("digits", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //[System.Obsolete]
+        //public int Digits { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("period", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public int Period { get; set; }
+        //[Newtonsoft.Json.JsonProperty("period", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //[System.Obsolete]
+        //public int Period { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("config", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public Config Config { get; set; }
+        //[Newtonsoft.Json.JsonProperty("config", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //[System.Obsolete]
+        //public Config Config { get; set; }
 
         [Newtonsoft.Json.JsonProperty("federationLink", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string FederationLink { get; set; }
@@ -36616,9 +36616,9 @@ namespace keycloak
         [Newtonsoft.Json.JsonProperty("enabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool Enabled { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("updateProfileFirstLoginMode", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public string UpdateProfileFirstLoginMode { get; set; }
+        //[Newtonsoft.Json.JsonProperty("updateProfileFirstLoginMode", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //[System.Obsolete]
+        //public string UpdateProfileFirstLoginMode { get; set; }
 
         [Newtonsoft.Json.JsonProperty("trustEmail", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool TrustEmail { get; set; }
@@ -36650,9 +36650,9 @@ namespace keycloak
         [Newtonsoft.Json.JsonProperty("config", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.IDictionary<string, string> Config { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("updateProfileFirstLogin", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public bool UpdateProfileFirstLogin { get; set; }
+        //[Newtonsoft.Json.JsonProperty("updateProfileFirstLogin", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //[System.Obsolete]
+        //public bool UpdateProfileFirstLogin { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 
@@ -36951,13 +36951,13 @@ namespace keycloak
         [Newtonsoft.Json.JsonProperty("notBefore", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int NotBefore { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("applicationRoles", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public System.Collections.Generic.IDictionary<string, System.Collections.Generic.ICollection<string>> ApplicationRoles { get; set; }
+        //[Newtonsoft.Json.JsonProperty("applicationRoles", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //[System.Obsolete]
+        //public System.Collections.Generic.IDictionary<string, System.Collections.Generic.ICollection<string>> ApplicationRoles { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("socialLinks", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public System.Collections.Generic.ICollection<SocialLinkRepresentation> SocialLinks { get; set; }
+        //[Newtonsoft.Json.JsonProperty("socialLinks", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //[System.Obsolete]
+        //public System.Collections.Generic.ICollection<SocialLinkRepresentation> SocialLinks { get; set; }
 
         [Newtonsoft.Json.JsonProperty("groups", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<string> Groups { get; set; }
@@ -37028,162 +37028,162 @@ namespace keycloak
 
     }
 
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.4.0.0 (NJsonSchema v11.3.2.0 (Newtonsoft.Json v13.0.0.0))")]
-    [System.Obsolete]
-    public partial class OAuthClientRepresentation
-    {
-        [Newtonsoft.Json.JsonProperty("id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Id { get; set; }
+    //[System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.4.0.0 (NJsonSchema v11.3.2.0 (Newtonsoft.Json v13.0.0.0))")]
+    //[System.Obsolete]
+    //public partial class OAuthClientRepresentation
+    //{
+    //    [Newtonsoft.Json.JsonProperty("id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public string Id { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("clientId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string ClientId { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("clientId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public string ClientId { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("description", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Description { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("description", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public string Description { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("type", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Type { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("type", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public string Type { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("rootUrl", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string RootUrl { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("rootUrl", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public string RootUrl { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("adminUrl", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string AdminUrl { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("adminUrl", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public string AdminUrl { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("baseUrl", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string BaseUrl { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("baseUrl", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public string BaseUrl { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("surrogateAuthRequired", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool SurrogateAuthRequired { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("surrogateAuthRequired", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public bool SurrogateAuthRequired { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("enabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool Enabled { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("enabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public bool Enabled { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("alwaysDisplayInConsole", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool AlwaysDisplayInConsole { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("alwaysDisplayInConsole", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public bool AlwaysDisplayInConsole { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("clientAuthenticatorType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string ClientAuthenticatorType { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("clientAuthenticatorType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public string ClientAuthenticatorType { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("secret", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Secret { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("secret", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public string Secret { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("registrationAccessToken", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string RegistrationAccessToken { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("registrationAccessToken", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public string RegistrationAccessToken { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("defaultRoles", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public System.Collections.Generic.ICollection<string> DefaultRoles { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("defaultRoles", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    [System.Obsolete]
+    //    public System.Collections.Generic.ICollection<string> DefaultRoles { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("redirectUris", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> RedirectUris { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("redirectUris", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public System.Collections.Generic.ICollection<string> RedirectUris { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("webOrigins", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> WebOrigins { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("webOrigins", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public System.Collections.Generic.ICollection<string> WebOrigins { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("notBefore", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int NotBefore { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("notBefore", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public int NotBefore { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("bearerOnly", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool BearerOnly { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("bearerOnly", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public bool BearerOnly { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("consentRequired", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool ConsentRequired { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("consentRequired", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public bool ConsentRequired { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("standardFlowEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool StandardFlowEnabled { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("standardFlowEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public bool StandardFlowEnabled { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("implicitFlowEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool ImplicitFlowEnabled { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("implicitFlowEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public bool ImplicitFlowEnabled { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("directAccessGrantsEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool DirectAccessGrantsEnabled { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("directAccessGrantsEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public bool DirectAccessGrantsEnabled { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("serviceAccountsEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool ServiceAccountsEnabled { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("serviceAccountsEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public bool ServiceAccountsEnabled { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("authorizationServicesEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool AuthorizationServicesEnabled { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("authorizationServicesEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public bool AuthorizationServicesEnabled { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("directGrantsOnly", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public bool DirectGrantsOnly { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("directGrantsOnly", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    [System.Obsolete]
+    //    public bool DirectGrantsOnly { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("publicClient", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool PublicClient { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("publicClient", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public bool PublicClient { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("frontchannelLogout", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool FrontchannelLogout { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("frontchannelLogout", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public bool FrontchannelLogout { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("protocol", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Protocol { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("protocol", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public string Protocol { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("attributes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, string> Attributes { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("attributes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public System.Collections.Generic.IDictionary<string, string> Attributes { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("authenticationFlowBindingOverrides", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, string> AuthenticationFlowBindingOverrides { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("authenticationFlowBindingOverrides", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public System.Collections.Generic.IDictionary<string, string> AuthenticationFlowBindingOverrides { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("fullScopeAllowed", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public bool FullScopeAllowed { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("fullScopeAllowed", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public bool FullScopeAllowed { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("nodeReRegistrationTimeout", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int NodeReRegistrationTimeout { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("nodeReRegistrationTimeout", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public int NodeReRegistrationTimeout { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("registeredNodes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, int> RegisteredNodes { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("registeredNodes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public System.Collections.Generic.IDictionary<string, int> RegisteredNodes { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("protocolMappers", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<ProtocolMapperRepresentation> ProtocolMappers { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("protocolMappers", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public System.Collections.Generic.ICollection<ProtocolMapperRepresentation> ProtocolMappers { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("clientTemplate", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public string ClientTemplate { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("clientTemplate", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    [System.Obsolete]
+    //    public string ClientTemplate { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("useTemplateConfig", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public bool UseTemplateConfig { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("useTemplateConfig", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    [System.Obsolete]
+    //    public bool UseTemplateConfig { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("useTemplateScope", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public bool UseTemplateScope { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("useTemplateScope", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    [System.Obsolete]
+    //    public bool UseTemplateScope { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("useTemplateMappers", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public bool UseTemplateMappers { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("useTemplateMappers", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    [System.Obsolete]
+    //    public bool UseTemplateMappers { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("defaultClientScopes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> DefaultClientScopes { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("defaultClientScopes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public System.Collections.Generic.ICollection<string> DefaultClientScopes { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("optionalClientScopes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<string> OptionalClientScopes { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("optionalClientScopes", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public System.Collections.Generic.ICollection<string> OptionalClientScopes { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("authorizationSettings", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public ResourceServerRepresentation AuthorizationSettings { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("authorizationSettings", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public ResourceServerRepresentation AuthorizationSettings { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("access", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.IDictionary<string, bool> Access { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("access", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public System.Collections.Generic.IDictionary<string, bool> Access { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("origin", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Origin { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("origin", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public string Origin { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Name { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("name", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public string Name { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("claims", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public Claims2 Claims { get; set; }
+    //    [Newtonsoft.Json.JsonProperty("claims", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    [System.Obsolete]
+    //    public Claims2 Claims { get; set; }
 
-        private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
+    //    private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 
-        [Newtonsoft.Json.JsonExtensionData]
-        public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
-        {
-            get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
-            set { _additionalProperties = value; }
-        }
+    //    [Newtonsoft.Json.JsonExtensionData]
+    //    public System.Collections.Generic.IDictionary<string, object> AdditionalProperties
+    //    {
+    //        get { return _additionalProperties ?? (_additionalProperties = new System.Collections.Generic.Dictionary<string, object>()); }
+    //        set { _additionalProperties = value; }
+    //    }
 
-    }
+    //}
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.4.0.0 (NJsonSchema v11.3.2.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class OrganizationDomainRepresentation
@@ -37649,13 +37649,13 @@ namespace keycloak
         [Newtonsoft.Json.JsonProperty("protocolMapper", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string ProtocolMapper { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("consentRequired", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public bool ConsentRequired { get; set; }
+        //[Newtonsoft.Json.JsonProperty("consentRequired", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //[System.Obsolete]
+        //public bool ConsentRequired { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("consentText", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public string ConsentText { get; set; }
+        //[Newtonsoft.Json.JsonProperty("consentText", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //[System.Obsolete]
+        //public string ConsentText { get; set; }
 
         [Newtonsoft.Json.JsonProperty("config", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.IDictionary<string, string> Config { get; set; }
@@ -37813,8 +37813,8 @@ namespace keycloak
         [Newtonsoft.Json.JsonProperty("actionTokenGeneratedByUserLifespan", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int ActionTokenGeneratedByUserLifespan { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("oauth2DeviceCodeLifespan", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int Oauth2DeviceCodeLifespan { get; set; }
+        //[Newtonsoft.Json.JsonProperty("oauth2DeviceCodeLifespan", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //public int Oauth2DeviceCodeLifespan { get; set; }
 
         [Newtonsoft.Json.JsonProperty("oauth2DevicePollingInterval", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int Oauth2DevicePollingInterval { get; set; }
@@ -37825,9 +37825,9 @@ namespace keycloak
         [Newtonsoft.Json.JsonProperty("sslRequired", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string SslRequired { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("passwordCredentialGrantAllowed", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public bool PasswordCredentialGrantAllowed { get; set; }
+        //[Newtonsoft.Json.JsonProperty("passwordCredentialGrantAllowed", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //[System.Obsolete]
+        //public bool PasswordCredentialGrantAllowed { get; set; }
 
         [Newtonsoft.Json.JsonProperty("registrationAllowed", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool RegistrationAllowed { get; set; }
@@ -37853,13 +37853,13 @@ namespace keycloak
         [Newtonsoft.Json.JsonProperty("editUsernameAllowed", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool EditUsernameAllowed { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("userCacheEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public bool UserCacheEnabled { get; set; }
+        //[Newtonsoft.Json.JsonProperty("userCacheEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //[System.Obsolete]
+        //public bool UserCacheEnabled { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("realmCacheEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public bool RealmCacheEnabled { get; set; }
+        //[Newtonsoft.Json.JsonProperty("realmCacheEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //[System.Obsolete]
+        //public bool RealmCacheEnabled { get; set; }
 
         [Newtonsoft.Json.JsonProperty("bruteForceProtected", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool BruteForceProtected { get; set; }
@@ -37892,17 +37892,17 @@ namespace keycloak
         [Newtonsoft.Json.JsonProperty("failureFactor", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public int FailureFactor { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("privateKey", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public string PrivateKey { get; set; }
+        //[Newtonsoft.Json.JsonProperty("privateKey", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //[System.Obsolete]
+        //public string PrivateKey { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("publicKey", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public string PublicKey { get; set; }
+        //[Newtonsoft.Json.JsonProperty("publicKey", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //[System.Obsolete]
+        //public string PublicKey { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("certificate", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public string Certificate { get; set; }
+        //[Newtonsoft.Json.JsonProperty("certificate", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //[System.Obsolete]
+        //public string Certificate { get; set; }
 
         [Newtonsoft.Json.JsonProperty("codeSecret", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [System.Obsolete]
@@ -37914,9 +37914,9 @@ namespace keycloak
         [Newtonsoft.Json.JsonProperty("groups", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<GroupRepresentation> Groups { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("defaultRoles", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public System.Collections.Generic.ICollection<string> DefaultRoles { get; set; }
+        //[Newtonsoft.Json.JsonProperty("defaultRoles", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //[System.Obsolete]
+        //public System.Collections.Generic.ICollection<string> DefaultRoles { get; set; }
 
         [Newtonsoft.Json.JsonProperty("defaultRole", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public RoleRepresentation DefaultRole { get; set; }
@@ -37927,9 +37927,9 @@ namespace keycloak
         [Newtonsoft.Json.JsonProperty("defaultGroups", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public System.Collections.Generic.ICollection<string> DefaultGroups { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("requiredCredentials", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public System.Collections.Generic.ICollection<string> RequiredCredentials { get; set; }
+        //[Newtonsoft.Json.JsonProperty("requiredCredentials", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //[System.Obsolete]
+        //public System.Collections.Generic.ICollection<string> RequiredCredentials { get; set; }
 
         [Newtonsoft.Json.JsonProperty("passwordPolicy", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string PasswordPolicy { get; set; }
@@ -38175,35 +38175,35 @@ namespace keycloak
         [System.Obsolete]
         public bool Social { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("updateProfileOnInitialSocialLogin", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public bool UpdateProfileOnInitialSocialLogin { get; set; }
+        //[Newtonsoft.Json.JsonProperty("updateProfileOnInitialSocialLogin", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //[System.Obsolete]
+        //public bool UpdateProfileOnInitialSocialLogin { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("socialProviders", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public System.Collections.Generic.IDictionary<string, string> SocialProviders { get; set; }
+        //[Newtonsoft.Json.JsonProperty("socialProviders", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //[System.Obsolete]
+        //public System.Collections.Generic.IDictionary<string, string> SocialProviders { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("applicationScopeMappings", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public System.Collections.Generic.IDictionary<string, System.Collections.Generic.ICollection<ScopeMappingRepresentation>> ApplicationScopeMappings { get; set; }
+        //[Newtonsoft.Json.JsonProperty("applicationScopeMappings", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //[System.Obsolete]
+        //public System.Collections.Generic.IDictionary<string, System.Collections.Generic.ICollection<ScopeMappingRepresentation>> ApplicationScopeMappings { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("applications", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public System.Collections.Generic.ICollection<ApplicationRepresentation> Applications { get; set; }
+        //[Newtonsoft.Json.JsonProperty("applications", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //[System.Obsolete]
+        //public System.Collections.Generic.ICollection<ApplicationRepresentation> Applications { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("oauthClients", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public System.Collections.Generic.ICollection<OAuthClientRepresentation> OauthClients { get; set; }
+        //[Newtonsoft.Json.JsonProperty("oauthClients", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //[System.Obsolete]
+        //public System.Collections.Generic.ICollection<OAuthClientRepresentation> OauthClients { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("clientTemplates", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        [System.Obsolete]
-        public System.Collections.Generic.ICollection<ClientTemplateRepresentation> ClientTemplates { get; set; }
+        //[Newtonsoft.Json.JsonProperty("clientTemplates", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //[System.Obsolete]
+        //public System.Collections.Generic.ICollection<ClientTemplateRepresentation> ClientTemplates { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("oAuth2DeviceCodeLifespan", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int OAuth2DeviceCodeLifespan { get; set; }
+        //[Newtonsoft.Json.JsonProperty("oAuth2DeviceCodeLifespan", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        //public int OAuth2DeviceCodeLifespan { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("oAuth2DevicePollingInterval", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int OAuth2DevicePollingInterval { get; set; }
+        ////[Newtonsoft.Json.JsonProperty("oAuth2DevicePollingInterval", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        ////public int OAuth2DevicePollingInterval { get; set; }
 
         private System.Collections.Generic.IDictionary<string, object> _additionalProperties;
 
