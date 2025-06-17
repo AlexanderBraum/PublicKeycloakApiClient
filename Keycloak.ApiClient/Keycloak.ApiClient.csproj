@@ -1,33 +1,41 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
-    <Nullable>enable</Nullable>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Title>Keycloak.ApiClient</Title>
-    <PackageProjectUrl>https://github.com/AlexanderBraum/PublicKeycloakApiClient</PackageProjectUrl>
-    <PackageIcon>icon.png</PackageIcon>
-    <PackageReadmeFile>readme.md</PackageReadmeFile>
-    <RepositoryUrl>https://github.com/AlexanderBraum/PublicKeycloakApiClient</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
-    <PackageTags>keycloak;openapi;apiclient</PackageTags>
-    <Description>A simple C# apiclient for Keycloak(17+)</Description>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<Nullable>enable</Nullable>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Title>Keycloak.ApiClient</Title>
+		<PackageProjectUrl>https://github.com/AlexanderBraum/PublicKeycloakApiClient</PackageProjectUrl>
+		<PackageIcon>icon.png</PackageIcon>
+		<PackageReadmeFile>readme.md</PackageReadmeFile>
+		<RepositoryUrl>https://github.com/AlexanderBraum/PublicKeycloakApiClient</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>keycloak;openapi;apiclient</PackageTags>
+		<Description>A simple C# apiclient for Keycloak(17+)</Description>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageReleaseNotes>
+			-Fixes 201 bug in the generated code.
+			-Removes [Obsolete] code.
+			-Adds an Fluent ApiClient (Currently Limited)
+		</PackageReleaseNotes>
+		<AssemblyVersion>1.1.1.0</AssemblyVersion>
+		<FileVersion>1.1.1.0</FileVersion>
+		<VersionPrefix>1.1.1</VersionPrefix>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <None Include="..\readme.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-    <None Include="..\source\icon.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-  </ItemGroup>
+	<ItemGroup>
+		<None Include="..\readme.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\source\icon.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Keycloak.ApiClient.Generated\Keycloak.ApiClient.Generated.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+	</ItemGroup>
 
 </Project>

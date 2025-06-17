@@ -15,8 +15,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Keycloak.ApiClient.Digid", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Keycloak.ApiClient.ConsoleApp", "Keycloak.ApiClient.ConsoleApp\Keycloak.ApiClient.ConsoleApp.csproj", "{8E1C01F9-A60C-4252-8C6D-77FAFD251103}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Keycloak.ApiClient.Generated", "Keycloak.ApiClient.Generated\Keycloak.ApiClient.Generated.csproj", "{B46BC07A-9C74-3BA1-B37A-524BCB66F20D}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,10 +33,6 @@ Global
 		{8E1C01F9-A60C-4252-8C6D-77FAFD251103}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E1C01F9-A60C-4252-8C6D-77FAFD251103}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E1C01F9-A60C-4252-8C6D-77FAFD251103}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B46BC07A-9C74-3BA1-B37A-524BCB66F20D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B46BC07A-9C74-3BA1-B37A-524BCB66F20D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B46BC07A-9C74-3BA1-B37A-524BCB66F20D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B46BC07A-9C74-3BA1-B37A-524BCB66F20D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
