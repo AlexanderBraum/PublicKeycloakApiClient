@@ -36,7 +36,7 @@ namespace Keycloak.ApiClient.FluentInterface
             return result;
         }
 
-        public async static Task<Realm> CreateRealmsAsync(
+        public async static Task<Realm> CreateRealmAsync(
             this KeycloakApiClient client,
             RealmRepresentation realmRepresentation)
         {
