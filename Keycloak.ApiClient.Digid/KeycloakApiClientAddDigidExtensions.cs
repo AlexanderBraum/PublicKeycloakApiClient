@@ -12,36 +12,63 @@ namespace Keycloak.ApiClient.Digid
 {
     public static class KeycloakApiClientAddDigidExtensions
     {
+        /// <summary>
+        /// Adds a DigiD Identity Provider to the specified Keycloak realm. The name of the IDP will be "digid".
+        /// </summary>
+        /// <param name="realm">The realm where to add the DigiD IDP.</param>
+        /// <param name="client">The client used for brokering to the Logius (DigiD) IDP.</param>
+        /// <param name="keycloakUrl">The URL of your Keycloak instance.</param>
+        /// <param name="metadataUrl">The Logius Metadata (SAML2) URL.</param>
+        /// <param name="cert">Used for signing the metadata in the SAML2 request.</param>
+        /// <returns></returns>
         public async static Task AddIdentityProviderDigidAsync(
-            this KeycloakApiClient keycloakApiClient,
-            string realm,
-            string clientName,
+            this Realm realm,
+            Client client,
             string keycloakUrl,
-            string[] redirectUrls,
-            string[] webOrigins,
-            string[] postLogoutRedirectUrls,
+            string metadataUrl,
+            X509Certificate2 cert
+            )
+        {
+            await realm.AddIdentityProviderDigidAsync(
+                client,
+                keycloakUrl,
+                null,
+                metadataUrl,
+                cert
+            );
+        }
+
+        /// <summary>
+        /// Adds a DigiD Identity Provider to the specified Keycloak realm. The name of the IDP will be "digid".
+        /// </summary>
+        /// <param name="realm">The realm where to add the DigiD IDP.</param>
+        /// <param name="client">The client used for brokering to the Logius (DigiD) IDP.</param>
+        /// <param name="keycloakUrl">The URL of your Keycloak instance.</param>
+        /// <param name="clientOidcHardcodedClaimMappers">Extra claims to add to a JWT, e.g., with realm the JWT comes from, for a multi-tenant setup.</param>
+        /// <param name="metadataUrl">The Logius Metadata (SAML2) URL.</param>
+        /// <param name="cert">Used for signing the metadata in the SAML2 request.</param>
+        /// <returns></returns>
+        public async static Task AddIdentityProviderDigidAsync(
+            this Realm realm,
+            Client client,
+            string keycloakUrl,
             (string Name, string Value)[] clientOidcHardcodedClaimMappers,
             string metadataUrl,
             X509Certificate2 cert
             )
         {
-            if (keycloakApiClient == null)
+            EnsureInputParams(realm, client, keycloakUrl, metadataUrl, cert);
+
+            await realm.EnsureCertIsUsedForSigningAsync2(cert);
+
+            if (clientOidcHardcodedClaimMappers != null)
             {
-                throw new ArgumentNullException(nameof(keycloakApiClient), "KeycloakApiClient cannot be null.");
+                foreach (var item in clientOidcHardcodedClaimMappers)
+                {
+                    var proMaRep = GetProtocolMapperRepresentation(item.Name, item.Value);
+                    await client.CreateProtocolMapperAsync(proMaRep);
+                }
             }
-
-            var realmObj = await keycloakApiClient.GetRealmAsync(realm);
-            var clientRep = GetClientRepresentation(clientName, keycloakUrl, redirectUrls, webOrigins, postLogoutRedirectUrls);
-            var clientObj = await realmObj.CreateClientAsync(clientRep);
-
-            await realmObj.EnsureCertIsUsedForSigningAsync2(clientName, cert);
-
-            foreach (var item in clientOidcHardcodedClaimMappers)
-            {
-                var proMaRep = GetProtocolMapperRepresentation(item.Name, item.Value);
-                await clientObj.CreateProtocolMapperAsync(proMaRep);
-            }
-
             var metadata = await Saml2MetadataExtracter.ExtractAsync(metadataUrl);
 
             var idpRep = GetIdentityProviderRepresentation(
@@ -55,55 +82,52 @@ namespace Keycloak.ApiClient.Digid
                 metadataUrl
             );
 
-            await realmObj.CreateIdentityProviderAsync(idpRep);
+            await realm.CreateIdentityProviderAsync(idpRep);
         }
 
-        public static ClientRepresentation GetClientRepresentation(
-            string clientName,
-            string rootUrl,
-            string[] redirectUrls,
-            string[] webOrigins,
-            string[] postLogoutRedirectUrls
-            )
+        private static void EnsureInputParams(
+            Realm realm,
+            Client client,
+            string keycloakUrl,
+            string metadataUrl,
+            X509Certificate2 cert)
         {
-            var dto = new ClientRepresentation
+            if (realm == null)
             {
-                ClientId = clientName,
-                Name = clientName,
-                RootUrl = rootUrl,
-                AdminUrl = rootUrl,
-                BaseUrl = rootUrl,
-                RedirectUris = redirectUrls,
-                WebOrigins = webOrigins,
-                Enabled = true,
-                ClientAuthenticatorType = "client-secret",
-                ImplicitFlowEnabled = true,
-                DirectAccessGrantsEnabled = true,
-                PublicClient = true,
-                FrontchannelLogout = true,
-                Attributes = new Dictionary<string, string>
-                    {
-                        { "post.logout.redirect.uris", string.Join("##", postLogoutRedirectUrls) }
-                    }
-            };
-            return dto;
+                throw new ArgumentNullException(nameof(realm), "Realm cannot be null.");
+            }
+            if (client == null)
+            {
+                throw new ArgumentNullException(nameof(client), "client cannot be null.");
+            }
+            if (keycloakUrl == null)
+            {
+                throw new ArgumentNullException(nameof(keycloakUrl), "keycloakUrl cannot be null.");
+            }
+            if (metadataUrl == null)
+            {
+                throw new ArgumentNullException(nameof(metadataUrl), "keycloakUrl cannot be null.");
+            }
+            if (cert == null)
+            {
+                throw new ArgumentNullException(nameof(cert), "cert cannot be null.");
+            }
         }
 
-        public async static Task EnsureCertIsUsedForSigningAsync2(
+        private async static Task EnsureCertIsUsedForSigningAsync2(
             this Realm realm,
-            string name,
             X509Certificate2 cert
             )
         {
-            var componants = await realm.GetAllComponentsAsync();
-            await componants.SingleOrDefault(x => x.Name == name)
+            var components = await realm.GetAllComponentsAsync();
+            await components.SingleOrDefault(x => x.Name == "rsa-generated")
                 .DeleteAsync();
 
             var componantRep = GetComponentRepresentationForRsaCert(cert);
             await realm.CreateComponentAsync(componantRep);
         }
 
-        public static ComponentRepresentation GetComponentRepresentationForRsaCert(X509Certificate2 cert)
+        private static ComponentRepresentation GetComponentRepresentationForRsaCert(X509Certificate2 cert)
         {
             var (Certificate, PrivateKey) = ReadPfxFile(cert);
             var dto = new ComponentRepresentation
@@ -124,7 +148,7 @@ namespace Keycloak.ApiClient.Digid
             return dto;
         }
 
-        public static (string Certificate, string PrivateKey) ReadPfxFile(X509Certificate2 cert)
+        private static (string Certificate, string PrivateKey) ReadPfxFile(X509Certificate2 cert)
         {
             var certString = Convert.ToBase64String(cert.Export(X509ContentType.Cert));
             var privateKey = cert.GetRSAPrivateKey();
@@ -132,7 +156,7 @@ namespace Keycloak.ApiClient.Digid
             return (certString, privateKeyString);
         }
 
-        public static ProtocolMapperRepresentation GetProtocolMapperRepresentation(string name, string claimValue)
+        private static ProtocolMapperRepresentation GetProtocolMapperRepresentation(string name, string claimValue)
         {
             var dto = new ProtocolMapperRepresentation
             {
@@ -147,7 +171,7 @@ namespace Keycloak.ApiClient.Digid
             return dto;
         }
 
-        public static IdentityProviderRepresentation GetIdentityProviderRepresentation(
+        private static IdentityProviderRepresentation GetIdentityProviderRepresentation(
             string alias,
             string singleLogoutServiceUrl,
             string idpEntityId,
