@@ -10,34 +10,34 @@ namespace Keycloak.ApiClient.FluentInterface
     public class Realm
     {
         public string Name => Representation?.Realm ?? string.Empty;
-        public KeycloakApiClient Client { get; }
+        public FluentKeycloakApiClient Client { get; }
         public RealmRepresentation Representation { get; set; }
 
         public Realm(
-            KeycloakApiClient client)
+            FluentKeycloakApiClient client)
         {
             Client = client;
         }
     }
 
-    public static partial class KeycloakApiClientExtensions
-    {
-        public async static Task<ICollection<Realm>> GetAllRealmsAsync(this KeycloakApiClient client, bool? briefRepresentation = null)
+    public static partial class FluentKeycloakApiClientExtensions
         {
-            var data = await client.AdminRealmsGetAsync(briefRepresentation);
+        public async static Task<ICollection<Realm>> GetAllRealmsAsync(this FluentKeycloakApiClient client, bool? briefRepresentation = null)
+        {
+            var data = await client.GeneratedClient.AdminRealmsGetAsync(briefRepresentation);
             var result = data.Result.Select(x => client.GetRealmObject(x)).ToList();
             return result;
         }
 
-        public async static Task<Realm> GetRealmAsync(this KeycloakApiClient client, string realm)
+        public async static Task<Realm> GetRealmAsync(this FluentKeycloakApiClient client, string realm)
         {
-            var data = await client.AdminRealmsGetAsync(realm);
+            var data = await client.GeneratedClient.AdminRealmsGetAsync(realm);
             var result = client.GetRealmObject(data.Result);
             return result;
         }
 
         public async static Task<Realm> CreateRealmAsync(
-            this KeycloakApiClient client,
+            this FluentKeycloakApiClient client,
             RealmRepresentation realmRepresentation)
         {
             var realm = client.GetRealmObject(realmRepresentation);
@@ -45,7 +45,7 @@ namespace Keycloak.ApiClient.FluentInterface
             return realm;
         }
 
-        private static Realm GetRealmObject(this KeycloakApiClient client, RealmRepresentation realmRepresentation)
+        private static Realm GetRealmObject(this FluentKeycloakApiClient client, RealmRepresentation realmRepresentation)
         {
             var result = new Realm(client)
             {
@@ -59,7 +59,7 @@ namespace Keycloak.ApiClient.FluentInterface
     {
         public async static Task<Realm> GetAsync(this Realm realm)
         {
-            var result = await realm.Client.AdminRealmsGetAsync(realm.Name);
+            var result = await realm.Client.GeneratedClient.AdminRealmsGetAsync(realm.Name);
             realm.Representation = result.Result;
             return realm;
         }
@@ -74,7 +74,7 @@ namespace Keycloak.ApiClient.FluentInterface
             var json = JsonConvert.SerializeObject(realm.Representation);
             var stream = json.ToStream();
 
-            await realm.Client.AdminRealmsPostAsync(stream);
+            await realm.Client.GeneratedClient.AdminRealmsPostAsync(stream);
             return realm;
         }
 
@@ -85,7 +85,7 @@ namespace Keycloak.ApiClient.FluentInterface
                 throw new KeycloakClientFluentInterfaceException("Realm representation cannot be null when updating a realm.");
             }
 
-            await realm.Client.AdminRealmsPutAsync(realm.Name, realm.Representation);
+            await realm.Client.GeneratedClient.AdminRealmsPutAsync(realm.Name, realm.Representation);
             return realm;
         }
 
@@ -96,7 +96,7 @@ namespace Keycloak.ApiClient.FluentInterface
                 throw new KeycloakClientFluentInterfaceException("Realm representation cannot be null when updating a realm.");
             }
 
-            await realm.Client.AdminRealmsDeleteAsync(realm.Name);
+            await realm.Client.GeneratedClient.AdminRealmsDeleteAsync(realm.Name);
             return realm;
         }
     }

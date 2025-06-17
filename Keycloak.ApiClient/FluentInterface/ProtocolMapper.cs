@@ -24,21 +24,21 @@ namespace Keycloak.ApiClient.FluentInterface
     {
         public async static Task<ICollection<ProtocolMapper>> GetAllProtocolMappersAsync(this Client client)
         {
-            var data = await client.Realm.Client.AdminRealmsClientsProtocolMappersModelsGetAsync(client.Realm.Name, client.Id);
+            var data = await client.Realm.Client.GeneratedClient.AdminRealmsClientsProtocolMappersModelsGetAsync(client.Realm.Name, client.Id);
             var result = data.Result.Select(x => client.GetProtocolMapperObject(x)).ToList();
             return result;
         }
 
         public async static Task<ProtocolMapper> GetProtocolMapperAsync(this Client client, string id)
         {
-            var data = await client.Realm.Client.AdminRealmsClientsProtocolMappersModelsGetAsync(realm: client.Realm.Name, client_uuid: client.Id, id: id);
+            var data = await client.Realm.Client.GeneratedClient.AdminRealmsClientsProtocolMappersModelsGetAsync(realm: client.Realm.Name, client_uuid: client.Id, id: id);
             var result = client.GetProtocolMapperObject(data.Result);
             return result;
         }
 
         public async static Task<ProtocolMapper> CreateProtocolMapperAsync(this Client client, ProtocolMapperRepresentation representation)
         {
-            var data = await client.Realm.Client.AdminRealmsClientsProtocolMappersModelsPostAsync(client.Realm.Name, client.Id, representation);
+            var data = await client.Realm.Client.GeneratedClient.AdminRealmsClientsProtocolMappersModelsPostAsync(client.Realm.Name, client.Id, representation);
             var result = client.GetProtocolMapperObject(representation);
             return result;
         }
@@ -57,13 +57,13 @@ namespace Keycloak.ApiClient.FluentInterface
     {
         public async static Task<ProtocolMapper> UpdateAsync(this ProtocolMapper obj)
         {
-            await obj.Client.Realm.Client.AdminRealmsClientsProtocolMappersModelsPutAsync(id: obj.Id, realm: obj.Client.Realm.Name, client_uuid: obj.Client.Id, obj.Representation);
+            await obj.Client.Realm.Client.GeneratedClient.AdminRealmsClientsProtocolMappersModelsPutAsync(id: obj.Id, realm: obj.Client.Realm.Name, client_uuid: obj.Client.Id, obj.Representation);
             return obj;
         }
 
         public async static Task<ProtocolMapper> DeleteAsync(this ProtocolMapper obj)
         {
-            await obj.Client.Realm.Client.AdminRealmsClientsProtocolMappersModelsDeleteAsync(id: obj.Id, realm: obj.Client.Realm.Name, client_uuid: obj.Client.Id);
+            await obj.Client.Realm.Client.GeneratedClient.AdminRealmsClientsProtocolMappersModelsDeleteAsync(id: obj.Id, realm: obj.Client.Realm.Name, client_uuid: obj.Client.Id);
             return obj;
         }
     }

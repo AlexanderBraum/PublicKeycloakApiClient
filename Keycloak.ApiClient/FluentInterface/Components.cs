@@ -24,21 +24,21 @@ namespace Keycloak.ApiClient.FluentInterface
     {
         public async static Task<ICollection<Component>> GetAllComponentsAsync(this Realm realm, string name = null, string parent = null, string type = null)
         {
-            var data = await realm.Client.AdminRealmsComponentsGetAsync(realm.Name, name, parent, type);
+            var data = await realm.Client.GeneratedClient.AdminRealmsComponentsGetAsync(realm.Name, name, parent, type);
             var result = data.Result.Select(x => realm.GetComponentObject(x)).ToList();
             return result;
         }
 
         public async static Task<Component> GetComponentAsync(this Realm realm, string id)
         {
-            var data = await realm.Client.AdminRealmsComponentsGetAsync(id: id, realm: realm.Name);
+            var data = await realm.Client.GeneratedClient.AdminRealmsComponentsGetAsync(id: id, realm: realm.Name);
             var result = realm.GetComponentObject(data.Result);
             return result;
         }
 
         public async static Task<Component> CreateComponentAsync(this Realm realm, ComponentRepresentation representation)
         {
-            var data = await realm.Client.AdminRealmsComponentsPostAsync(realm.Name, representation);
+            var data = await realm.Client.GeneratedClient.AdminRealmsComponentsPostAsync(realm.Name, representation);
             var result = realm.GetComponentObject(representation);
             return result;
         }
@@ -57,13 +57,13 @@ namespace Keycloak.ApiClient.FluentInterface
     {
         public async static Task<Component> UpdateAsync(this Component obj)
         {
-            await obj.Realm.Client.AdminRealmsComponentsPutAsync(id: obj.Id, realm: obj.Realm.Name, obj.Representation);
+            await obj.Realm.Client.GeneratedClient.AdminRealmsComponentsPutAsync(id: obj.Id, realm: obj.Realm.Name, obj.Representation);
             return obj;
         }
 
         public async static Task<Component> DeleteAsync(this Component obj)
         {
-            await obj.Realm.Client.AdminRealmsComponentsDeleteAsync(id: obj.Id, realm: obj.Realm.Name);
+            await obj.Realm.Client.GeneratedClient.AdminRealmsComponentsDeleteAsync(id: obj.Id, realm: obj.Realm.Name);
             return obj;
         }
     }
