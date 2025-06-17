@@ -20,17 +20,16 @@ var client = await realm.CreateClientAsync(
                 Name = "ClientName",
                 Id = "ClientId"
             });
-
 ```
 
 ## Features
 - Compatible with .NET Standard 2.1
 - Implements all endpoints from the Keycloak OpenAPI specification as methods in a single ApiClient class
-- Add an (limited) Fluent api client wrapper for writing declaratif code.
+- Adds a (limited) Fluent API client wrapper for writing declarative code.
 
 ## Requirements
 - Keycloak v17+ (or any version supporting the [OpenAPI specification](https://www.keycloak.org/docs-api/latest/rest-api/openapi.json))
-- .NET Standard 2.1 compadable.
+- .NET Standard 2.1 compatible.
 
 ## Notes
 - The client is auto-generated; for advanced usage or custom endpoints, consider extending the generated code.
@@ -38,11 +37,11 @@ var client = await realm.CreateClientAsync(
 - There is a fluent wrapper around the generated ApiClient, which allows you to write more declarative code. This is not a full fluent wrapper.
 - The Fluent ApiClient is updated periodically to keep up with demand. If you need a specific feature, please open an issue or pull request.
 
-## source code
+## Source code
 - [GitHub repo: Keycloak.ApiClient](https://github.com/AlexanderBraum/PublicKeycloakApiClient)
 
 # Project files:
-- KeycloakApiClientFactory,cs: Factory class to create an instance of the KeycloakApiClient with authentication.
+- KeycloakApiClientFactory.cs: Factory class to create an instance of the KeycloakApiClient with authentication.
 - KeycloakApiClient.cs: The main ApiClient class, generated from the OpenAPI specification with NSwagStudio.
 - source/nswag.nswag: NSwag configuration file for generating the ApiClient.
 - source/keycloak__openapi.json: Copy of the OpenAPI specification file for Keycloak, used to generate the ApiClient.
