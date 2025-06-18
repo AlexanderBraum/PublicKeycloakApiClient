@@ -120,8 +120,11 @@ namespace Keycloak.ApiClient.Digid
             )
         {
             var components = await realm.GetAllComponentsAsync();
-            await components.SingleOrDefault(x => x.Name == "rsa-generated")
-                .DeleteAsync();
+            var component = components.SingleOrDefault(x => x.Name == "rsa-generated");
+            if(component != null)
+            {
+                await component.DeleteAsync();
+            }
 
             var componantRep = GetComponentRepresentationForRsaCert(cert);
             await realm.CreateComponentAsync(componantRep);

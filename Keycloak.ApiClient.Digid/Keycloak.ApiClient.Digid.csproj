@@ -6,11 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Keycloak.ApiClient" Version="1.1.1" />
     <PackageReference Include="System.Text.Json" Version="9.0.6" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Keycloak.ApiClient\Keycloak.ApiClient.csproj" />
   </ItemGroup>
 
 </Project>
