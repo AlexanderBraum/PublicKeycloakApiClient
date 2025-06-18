@@ -30,14 +30,14 @@ namespace Keycloak.ApiClient.FluentInterface
             return result;
         }
 
-        public async static Task<AuthenticationFlow> GetClientAsync(this Realm realm, string id)
+        public async static Task<AuthenticationFlow> GetAuthenticationFlowAsync(this Realm realm, string id)
         {
             var data = await realm.Client.GeneratedClient.AdminRealmsAuthenticationFlowsGetAsync( id: id, realm.Name);
             var result = realm.GetAuthenticationFlowObject(data.Result);
             return result;
         }
 
-        public async static Task<AuthenticationFlow> CreateClientAsync(this Realm realm, AuthenticationFlowRepresentation representation)
+        public async static Task<AuthenticationFlow> CreatetAuthenticationFlowAsync(this Realm realm, AuthenticationFlowRepresentation representation)
         {
             var data = await realm.Client.GeneratedClient.AdminRealmsAuthenticationFlowsPostAsync(realm.Name, representation);
             var result = realm.GetAuthenticationFlowObject(representation);
