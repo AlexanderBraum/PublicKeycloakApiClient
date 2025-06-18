@@ -15,9 +15,10 @@ namespace Keycloak.ApiClient.FluentInterface
             Realm realm
             )
         {
-
+            Realm = realm;
         }
     }
+
     public static partial class RealmExtensions
     {
         public async static Task<ICollection<IdentityProvider>> GetAllIdentityProvidersAsync(this Realm realm, bool? briefRepresentation = null, int? first = null, int? max = null, bool? realmOnly = null, string search = null)
