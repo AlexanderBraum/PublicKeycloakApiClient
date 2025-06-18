@@ -1,9 +1,8 @@
 
 using keycloak;
-using Keycloak.ApiClient.FluentInterface;
 using System.Threading.Tasks;
 
-namespace Keycloak.ApiAuthenticatorConfig.FluentInterface
+namespace Keycloak.ApiClient.FluentInterface
 {
     public class AuthenticatorConfig
     {
