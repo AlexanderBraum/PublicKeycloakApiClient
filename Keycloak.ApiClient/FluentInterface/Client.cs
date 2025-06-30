@@ -56,16 +56,16 @@ namespace Keycloak.ApiClient.FluentInterface
 
     public static partial class ClientExtensions
     {
-        public async static Task<Client> UpdateAsync(this Client client)
+        public async static Task<Client> UpdateAsync(this Client obj)
         {
-            await client.Realm.Client.GeneratedClient.AdminRealmsClientsPutAsync(client.Realm.Name, client.Id, client.Representation);
-            return client;
+            await obj.Realm.Client.GeneratedClient.AdminRealmsClientsPutAsync(obj.Realm.Name, obj.Id, obj.Representation);
+            return obj;
         }
 
-        public async static Task<Client> DeleteAsync(this Client client)
+        public async static Task<Client> DeleteAsync(this Client obj)
         {
-            await client.Realm.Client.GeneratedClient.AdminRealmsClientsDeleteAsync(client.Realm.Name, client.Id);
-            return client;
+            await obj.Realm.Client.GeneratedClient.AdminRealmsClientsDeleteAsync(obj.Realm.Name, obj.Id);
+            return obj;
         }
     }
 }
