@@ -12,13 +12,13 @@ namespace Keycloak.ApiClient.FluentInterface
         public UserRepresentation Representation { get; }
     }
 
-    public class User : IUser
+    public class RealmUser : IUser
     {
         public string Id => Representation?.Id ?? string.Empty;
         public UserRepresentation Representation { get; set; }
         public Realm Realm { get; set; }
 
-        public User(
+        public RealmUser(
             Realm realm
             )
         {
@@ -58,10 +58,10 @@ namespace Keycloak.ApiClient.FluentInterface
     {
         public string Id => Representation?.Id ?? string.Empty;
         public UserRepresentation Representation { get; set; }
-        public Role Role { get; set; }
+        public IRole Role { get; set; }
 
         public RoleUser(
-            Role role
+            IRole role
             )
         {
             Role = role;
@@ -133,7 +133,7 @@ namespace Keycloak.ApiClient.FluentInterface
 
         private static IUser GetUserObject(this Realm realm, UserRepresentation representation)
         {
-            var result = new User(realm)
+            var result = new RealmUser(realm)
             {
                 Representation = representation
             };
@@ -161,9 +161,9 @@ namespace Keycloak.ApiClient.FluentInterface
         }
     }
 
-    public static partial class RoleExtensions
+    public static partial class ClientRoleExtensions
     {
-        public async static Task<ICollection<IUser>> GetUsersAsync(this Role role, bool? briefRepresentation = null, int? first = null, int? max = null)
+        public async static Task<ICollection<IUser>> GetUsersAsync(this ClientRole role, bool? briefRepresentation = null, int? first = null, int? max = null)
         {
             var data = await role.Client.Realm.Client.GeneratedClient.AdminRealmsClientsRolesUsersAsync(
                 role_name: role.Name,
@@ -176,7 +176,7 @@ namespace Keycloak.ApiClient.FluentInterface
             return result;
         }
 
-        public async static Task<ICollection<IUser>> GetUsersGroupAsync(this Role role, bool? briefRepresentation = null, int? first = null, int? max = null)
+        public async static Task<ICollection<IUser>> GetUsersGroupAsync(this ClientRole role, bool? briefRepresentation = null, int? first = null, int? max = null)
         {
             var data = await role.Client.Realm.Client.GeneratedClient.AdminRealmsClientsRolesGroupsAsync(
                 role_name: role.Name,
@@ -189,7 +189,7 @@ namespace Keycloak.ApiClient.FluentInterface
             return result;
         }
 
-        private static IUser GetRoleUserObject(this Role role, UserRepresentation representation)
+        private static IUser GetRoleUserObject(this IRole role, UserRepresentation representation)
         {
             var result = new RoleUser(role)
             {
