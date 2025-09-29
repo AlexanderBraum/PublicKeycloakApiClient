@@ -14,13 +14,12 @@
 		<Description>A simple C# apiclient for Keycloak(17+)</Description>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageReleaseNotes>
-			-Fixes 201 bug in the generated code.
-			-Removes [Obsolete] code.
-			-Adds an Fluent ApiClient (Currently Limited)
+			-Add Realm.GeDefaultRepresentation()
+			-Add Client.GeDefaultRepresentation()
 		</PackageReleaseNotes>
-		<AssemblyVersion>1.1.1.0</AssemblyVersion>
-		<FileVersion>1.1.1.0</FileVersion>
-		<VersionPrefix>1.1.1</VersionPrefix>
+		<AssemblyVersion>1.2.1.0</AssemblyVersion>
+		<FileVersion>1.2.1.0</FileVersion>
+		<VersionPrefix>1.2.1</VersionPrefix>
 	</PropertyGroup>
 
 	<ItemGroup>
